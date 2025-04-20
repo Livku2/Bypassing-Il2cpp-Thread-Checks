@@ -149,7 +149,7 @@ void* new_il2cpp_class_from_name(const void* image, const char* ns, const char* 
         //use klass for hooking here
     }
 
-    //you may also try calling you're own method, because as long as they are called within the il2cpp thread, the il2cpp functions will work
+    //you may also try calling your own method, because as long as they are called within the il2cpp thread, the il2cpp functions will work
     if(doOnce){
       doOnce = true;
       MySetupMethod();
