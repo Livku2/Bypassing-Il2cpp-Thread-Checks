@@ -3,7 +3,7 @@
 Sometimes when you try to call an il2cpp symbol such as ```il2cpp_class_from_name```, it may return nullptr, this is due to one of three possible issues. Luckily, the first two solutions are very similar.
 
 ### Requirements
-You will need a hooking, for this example I will use dobby, but you can use any you want.
+You will need a hooking library, for this example I will use dobby, but you can use any you want.
 
 ## Issue 1
 
