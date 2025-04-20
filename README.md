@@ -68,7 +68,7 @@ Then get the il2cpp_class_from_name address and hook it
             void* target_func = dlsym(handle, "il2cpp_class_from_name");
             if (target_func) {
                 //Use any hooking library of your choice
-                DobbyHook(target_func, reinterpret_cast<dobby_dummy_func_t>(my_il2cpp_class_from_name), reinterpret_cast<dobby_dummy_func_t*>(&orig_il2cpp_class_from_name));
+                DobbyHook(target_func, reinterpret_cast<dobby_dummy_func_t>(new_il2cpp_class_from_name), reinterpret_cast<dobby_dummy_func_t*>(&il2cpp_class_from_name));
 
                 LOGI("Hooked il2cpp_class_from_name successfully!");
             } else {
@@ -168,7 +168,7 @@ Then get the il2cpp_class_from_name address and hook it
             void* target_func = dlsym(handle, "il2cpp_class_from_name");
             if (target_func) {
                 //Use any hooking library of your choice
-                DobbyHook(target_func, reinterpret_cast<dobby_dummy_func_t>(my_il2cpp_class_from_name), reinterpret_cast<dobby_dummy_func_t*>(&orig_il2cpp_class_from_name));
+                DobbyHook(target_func, reinterpret_cast<dobby_dummy_func_t>(new_il2cpp_class_from_name), reinterpret_cast<dobby_dummy_func_t*>(&il2cpp_class_from_name));
 
                 LOGI("Hooked il2cpp_class_from_name successfully!");
             } else {
